@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -89,4 +90,144 @@
             android:layout_weight="1" />
     </LinearLayout>
 
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:id="@+id/container">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bluetoothView"
+        android:visibility="gone">
+
+        <TextView
+            android:text="Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bluetoothLabel"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/bluetoothValue"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Get Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/dataButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:visibility="gone"
+        android:id="@+id/checkboxView">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkboxLabel"
+            android:maxWidth="140px"
+            android:minWidth="140px" />
+
+        <CheckBox
+            android:text="CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkboxValue"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/cameraView"
+        android:layout_height="88dp"
+        android:visibility="gone">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cameraLabel"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:minWidth="140px"
+            android:maxWidth="140px" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add_a_photo_black_24dp"
+            android:id="@+id/cameraValue"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/textboxView"
+        android:visibility="gone"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/textboxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unique"
+            android:textSize="16dp"
+            android:minWidth="140px"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:maxWidth="140px" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textboxValue"
+            android:singleLine="true"
+            android:hint=" " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/dropdownView"
+        android:visibility="gone"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="SpinnerTest"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dropdownLabel"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dropdownValue"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+>>>>>>> 0.3.x
 </LinearLayout>
